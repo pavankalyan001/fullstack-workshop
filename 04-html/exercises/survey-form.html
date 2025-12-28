@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction Survey</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend><b>Required fields</b></legend>
+            <label for="name"><b>Full Name</b></label>&nbsp;&nbsp;
+            <input type="text" id="name" minlength="2" maxlength="100">
+            <br>
+            <br>
+            <label for="email"><b>Email</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" id="email">
+            <br>
+            <br>
+            <label for="phone"><b>Phone</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" pattern="[0-9]{10}" id="phone">
+            <br>
+            <br>
+            
+            <label for="age"><b>Agerange-</b></label>
+            <select name="age range" id="age">
+                <option value="l18">Under 18</option>
+                <option value="18-24">18-24</option>
+                <option value="25-34">25-34</option>
+                <option value="35-44">35-44</option>
+                <option value="55+">55+</option>
+            </select>
+                <p><b>Gender-radio buttons &nbsp;</b></p>
+                <input type="radio" name="gender" id="male" value="male" id="gen">
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" name="gender" id="female" value="female" id="gen">
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" name="gender" id="notsay" value="prefernot" id="gen">
+                <label for="notsay">Prefer not </label>
+           
+           
+        </fieldset>
+
+        <section>
+            
+            <fieldset>
+                <legend><b>Product feedback</b></legend>
+                <p><b>Products Used</b></p>
+                <input type="checkbox" id="A" NAME="product" value="A">
+                <label for="A">Product A - Mobile App</label>
+                <br>
+                <input type="checkbox" id="B" NAME="product" value="B">
+                <label for="B">Product B - API Services</label>
+                <br>
+                <input type="checkbox" id="C" NAME="product" value="C">
+                <label for="C">Product C - Desktop Software</label>
+                <br>
+                <input type="checkbox" id="D" NAME="product" value="D">
+                <label for="D">Product D - Cloud Storage</label>
+                <br>
+                <input type="checkbox" id="E" NAME="product" value="E">
+                <label for="E">Product E - Web Application</label>
+
+                <p><b>Primary Product</b></p>
+                <input type="checkbox" id="A" NAME="product" value="A">
+                <label for="A">Product A - Mobile App</label>
+                <br>
+                <input type="checkbox" id="B" NAME="product" value="B">
+                <label for="B">Product B - API Services</label>
+                <br>
+                <input type="checkbox" id="C" NAME="product" value="C">
+                <label for="C">Product C - Desktop Software</label>
+                <br>
+                <input type="checkbox" id="D" NAME="product" value="D">
+                <label for="D">Product D - Cloud Services</label>
+                <br>
+                <input type="checkbox" id="E" NAME="product" value="E">
+                <label for="E">Product E - Web Application</label>
+                <br>
+                <br>
+
+                <label for=long><b>How long have you been a customer?</b></label>
+                <select name="howlong" id="long">
+                    <option value="L1">Less than 1 month</option>
+                    <option value="1-6">1-6 months</option>
+                    <option value="6-12">6-12 months</option>
+                    <option value="1-2">1-2 years</option>
+                    <option value="G2">More than 2 year</option>
+                </select>
+
+            </fieldset>
+            
+        </section>
+
+        <fieldset>
+            <legend><b>Satisfaction Rating</b></legend>
+            <p><b>Overall Satisfaction</b></p>
+            <input type="radio" name="rating" id="1" value="1" >
+            <label for="1">1</label>
+            <br>
+            <input type="radio" name="rating" id="2" value="2" >
+            <label for="2">2</label>
+            <br>
+            <input type="radio" name="rating" id="3" value="3" >
+            <label for="3">3</label>
+            <br>
+            <input type="radio" name="rating" id="4" value="4" >
+            <label for="4">4</label>
+            <br>
+            <input type="radio" name="rating" id="5" value="5" >
+            <label for="5">5</label>
+            <br>
+            <br>
+            <label for="pq"><b>Product Quality</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="range" min="1" max="10" step="1" id="pq">
+            <br>
+            <br>
+            <label for="cs"><b>Customer Support</b></label>&nbsp;&nbsp;
+            <input type="range" min="1" max="10" step="1" id="cs">
+            <br>
+            <br>
+            <label for="cs"><b>Value for Money</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="range" min="1" max="10" step="1" id="cs">
+
+            <p><b>Would you recommend us?</b></p>
+            <input type="radio" name="recc" id="def" value="1" >
+            <label for="def">Definitely</label>
+            <br>
+            <input type="radio" name="recc" id="prob" value="2" >
+            <label for="prob">Probably</label>
+            <br>
+            <input type="radio" name="recc" id="Ns" value="3" >
+            <label for="Ns">Not sure</label>
+            <br>
+            <input type="radio" name="recc" id="pn" value="4" >
+            <label for="pn">Probably not</label>
+            <br>
+            <input type="radio" name="recc" id="dn" value="5" >
+            <label for="dn">Definitely not</label>
+            <br>
+            <br>
+
+
+            
+
+
+
+        </fieldset>
+        <fieldset>
+            <legend><b>Detailed Feedback</b></legend>
+            <label for="most"><b>What do you like most?</b></label>&nbsp;&nbsp;
+            <textarea id="most" rows="4" maxlength="500"></textarea>
+            <br>
+            <label for="imp"><b>What can we improve?</b></label>&nbsp;&nbsp;&nbsp;
+            <textarea id="most" rows="4" maxlength="500"></textarea>
+            <br>
+            <label for="comm"><b>Additional Comments</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <textarea id="comm" rows="6" maxlength="1000"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Contact Preferences</b></legend>
+            <p><b>Preferred Contact Method</b></p>
+                <input type="checkbox" id="Email" NAME="cont" value="Email">
+                <label for="Email">Email</label>
+                <br>
+                <input type="checkbox" id="phone" NAME="cont" value="phone">
+                <label for="phone">Phone</label>
+                <br>
+                <input type="checkbox" id="sms" NAME="cont" value="sms">
+                <label for="sms">SMS</label>
+                <br>
+                <input type="checkbox" id="No contact" NAME="cont" value="No contact">
+                <label for="No contact">No contact</label>
+                <br>
+                <br>
+                
+                <input type="checkbox" id="a" >
+                <label for="a" ><b>Subscribe to Newsletter</b></label>
+                <br>
+                <input type="checkbox" id="b" >
+                <label for="b" ><b>Agree to Terms</b></label>
+                
+
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+
+    
+    </form>
+
+
+    
+</body>
+</html>
